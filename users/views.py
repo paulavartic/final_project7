@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from user.serializers import UserSerializer
+from users.serializers import UserSerializer
 from rest_framework.generics import CreateAPIView
 from rest_framework.permissions import AllowAny, IsAdminUser
-from user.permissions import IsUser
+from users.permissions import IsUser
+from users.models import User
 
 
 class UserViewSet(viewsets.ModelViewSet):

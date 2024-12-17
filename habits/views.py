@@ -19,4 +19,4 @@ class PrivateHabitViewSet(ModelViewSet):
 
 class PublicHabitViewSet(ReadOnlyModelViewSet):
     serializer_class = HabitSerializer
-    queryset = Habit.objects.filter(public=True)
+    queryset = Habit.objects.filter(habit_status='Public')
