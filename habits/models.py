@@ -65,4 +65,4 @@ class Habit(models.Model):
         verbose_name_plural = 'Habits'
 
     def __str__(self):
-        return self.name
+        return f'I will {self.name} at {self.time} at {self.place}'
