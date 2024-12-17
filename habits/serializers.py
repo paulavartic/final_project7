@@ -7,3 +7,10 @@ class HabitSerializer(ModelSerializer):
     class Meta:
         model = Habit
         fields = "__all__"
+        validators = [
+            RewardAndRelatedValidator(),
+            ExecutionTimeValidator(),
+            PleasantHabitValidator(),
+            FrequencyValidator()
+        ]
+        
