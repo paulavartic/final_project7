@@ -1,0 +1,13 @@
+Final project nr. 7
+-Clone the project
+-After cloning,enter the command in the console in the project folder: (python -m venv venv; then venv/scripts/activate)
+-Transfer dependencies: pip install -r requirements.txt
+-Create a new database
+-Activate the migrations (python manage.py migrate)
+-Make your settings in the .env.example file, rename it to .env
+-Register the superuser (python manage.py cu)
+-Activate Redis (redis server)
+-Run the project (python manage.py runserver)
+-Run celerybeat in the second tab: celery -A config beatl info -S django
+-Run celery worker in the terminal: celeri -A config workers INFO
+-Log in to the telegram bot, and click /start
